@@ -1,0 +1,139 @@
+/* ------------------ GLOBAL STYLES ------------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+
+  background: radial-gradient(
+    circle at center,
+    #fff176 0%,
+    #ffb74d 20%,
+    #f48fb1 40%,
+    #81d4fa 60%,
+    #a5d6a7 80%
+  );
+}
+
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.description {
+  text-align: center;
+  margin: 10px 0 30px;
+  color: #555;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 20px;
+}
+
+/* ------------------ FORM SECTION ------------------ */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background: #3498db;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* ------------------ TABLE SECTION ------------------ */
+.table-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #ecf0f1;
+}
+
+.action-btn {
+  padding: 5px 8px;
+  margin: 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.edit {
+  background: #f39c12;
+}
+
+.delete {
+  background: #e74c3c;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+form,
+.table-container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(50px);
+}
